@@ -3,8 +3,11 @@
 # Financial Report
 In this report, I analyzed data pulled from personal bank accounts through Plaid API and historical stock prices pulled from Alpaca trade API. Through this data I have prepared this report for the Consumer Division of Harold's company. This analysis revolves around budgetary analysis and looking at various scenarios for retirement planning.
 
-Language Used: Python, with Pandas used for Data Cleaning.
+Language Used: Python, with Pandas used for Data Cleaning.    
+
 APIs used: PLAID, ALPACA
+
+Files: Jupyter Notebooks account_summary.ipynb and portfolio_planner.ipynb
 
 
 ## Income Summary
