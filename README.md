@@ -1,7 +1,7 @@
 # APIs-Project
 
 # Financial Report
-In this report, I analyzed data pulled from personal bank accounts through Plaid API and historical stock prices pulled from Alpaca trade API. Through this data I have prepared this report for the Consumer Division of Harold's company. This analysis revolves around budgetary analysis and looking at various scenarios for retirement planning.
+In this report, the data pulled from personal bank accounts through Plaid API was analyzed and historical stock prices were pulled from Alpaca trade API. Through this data a report was created for the Consumer Division of Harold's company. This analysis revolves around budgetary analysis and looking at various scenarios for retirement planning.
 
 Language Used: Python, with Pandas used for Data Cleaning.    
 
@@ -14,7 +14,7 @@ Files: Jupyter Notebooks account_summary.ipynb and portfolio_planner.ipynb
 
 1. Generated a Plaid access token to access the Developer Sandbox.
 
-2. Used the Access token to fetch account transactions from the sandbox. I fetched the last 90 days of transactions from the sandbox using the following institution:
+2. Used the Access token to fetch account transactions from the sandbox. The last 90 days of transactions were fetched from the sandbox using the following institution:
 
     ```python
     INSTITUTION_ID = "ins_109508"
@@ -47,19 +47,19 @@ In this period, the person spent $10645.24 each in the previous three months. Th
 ![Total monthly expenses](Starter_Code/expense_bar3.png)
 
 # Retirement Planning
-In this section, I analysed the performance of a portfolio which consists of stocks and bonds through a simulation based on Monte Carlo model using the historical price data of last one year.
+In this section, the performance of a portfolio was analyzed which consists of stocks and bonds through a simulation based on Monte Carlo model using the historical price data of last one year.
 
-* I took historical closing prices of SPY (SPDR S&P 500 ETF) and AGG (iShares Core U.S. Aggregate Bond ETF) for the last one year through Alapaca Trade API.
+* The historical closing prices of SPY (SPDR S&P 500 ETF) and AGG (iShares Core U.S. Aggregate Bond ETF) was looked for the last one year through Alapaca Trade API.
 * This was used to calculate the average daily returns and volatility using standard deviation
-* I created a portfolio consisting of 60% stocks (SPY) and 40% bonds (AGG) to test the returns 
-* Thereafter, I ran a Monte Carlo simulations for 500 iterations over the next 30 years based on previous day's closing price (Assuming the standard deviation and volatility to follow a normal probabilistic distributional behavior)
+* A portfolio consisting of 60% stocks (SPY) and 40% bonds (AGG) was created to test the returns 
+* Thereafter, a Monte Carlo simulations was run for 500 iterations over the next 30 years based on previous day's closing price (Assuming the standard deviation and volatility to follow a normal probabilistic distributional behavior)
 
 ## Analysis of Performance
 The plot for the 500 Monte Carlo simulations over the next 30 years in given below.
 
 ![Monte Carlo Simulations](Starter_Code/monte_carlo.png)
 
-At the end of 30 years, I found that the ending cumulative daily return is in the range 51.57 to 804.01. 
+At the end of 30 years, it was found that the ending cumulative daily return is in the range 51.57 to 804.01. 
 
 Though with the application of a 90% confidence interval, we can narrow down that range to 102.82 and 379.34. The maximum number of simulations showed an avergae return that is approximately close to 200.
 
